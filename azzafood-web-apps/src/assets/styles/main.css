@@ -1,0 +1,487 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+} */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+:root {
+  --warna-ungu: #1b2e3c;
+  --warna-hijau: #a1b4a8;
+  --warna-hitam: #0c0c1e;
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --txt-primary: #0c0c1e;
+  --txt-secondary: #ffffff;
+  --icons-bg-primary: #a1b4a8;
+  --icons-bg-secondary: #1b2e3c;
+  --font-primary: "Playfair Display";
+  --font-secondary: "Rousseau Deco";
+}
+
+body {
+  font-family: var(--font-primary) !important;
+  background-color: var(--bg-secondary) !important ;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*
+ * navigation
+ */
+
+.navbar {
+  background-color: var(--bg-secondary);
+}
+
+.navlist {
+  width: 100%;
+  border: 1px solid;
+}
+
+.navbar-brand p {
+  padding-top: 10px;
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-size: 2em;
+  color: var(--warna-ungu);
+}
+
+.nav-item {
+  font-size: 24px;
+  font-family: var(--font-primary);
+}
+
+.nav-item:hover,
+.navbar-brand:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out 0s;
+  transition-delay: 0.3s;
+}
+
+/*
+ * hero
+ */
+
+.hero-menu,
+.hero-food,
+.hero-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  font-size: 100px;
+  background-position: center;
+}
+
+.hero-menu {
+  background-image: url(../images/hero-image_4.jpg);
+}
+
+.hero-about {
+  background-image: url(../images/sandwich.jpg);
+}
+
+.motto p {
+  color: var(--txt-secondary);
+  font-size: 7rem;
+  font-weight: 500;
+  text-shadow: 1px 1px var(--icons-bg-primary);
+  text-align: center;
+  padding: 0;
+  padding-top: 80px;
+  font-family: var(--font-primary);
+}
+
+.sambutan {
+  text-align: center;
+  font-size: 5em;
+}
+
+/* menu */
+
+.judul-menu {
+  margin-bottom: 30px;
+}
+
+#menu button {
+  background-color: var(--bg-secondary); /* Green */
+  border: 3px solid var(--warna-hijau);
+  color: var(--txt-primary);
+  text-decoration: none;
+  font-size: 28px;
+  padding: 5px;
+  margin-left: 0.6em;
+  font-family: var(--font-primary);
+}
+
+#menu button:hover {
+  color: var(--bg-primary);
+  background-color: var(--warna-ungu);
+  transition: 0.2s ease-in-out;
+}
+
+#menu {
+  display: flex;
+  width: 100%;
+  margin: 2em 0;
+  margin-top: 80px;
+  /* border: 1px solid; */
+}
+
+/* .menu {
+  position: fixed;
+}
+
+.outlet {
+  margin-top: 300px;
+} */
+
+/*
+ * post/Menu
+ */
+
+#Menu-Breakfast,
+#Menu-Dinner {
+  background-color: var(--bg-secondary);
+}
+
+/* #Menu-Breakfast,
+#Menu-Dinner,
+#Menu-Lunch {
+  margin-bottom: 70px;
+} */
+
+/* #Menu-Lunch,
+#Menu-Drink,
+#Order {
+  background-color: var(--bg-primary);
+  border: 1px solid;
+} */
+
+.menu-data {
+  margin-bottom: 30px;
+  /* border: 1px solid; */
+  /* margin-right: 20px; */
+}
+
+.detail-menu {
+  display: flex;
+}
+
+.nama a {
+  font-size: 2em;
+  margin: 0;
+  text-decoration: underline;
+  color: var(--warna-ungu);
+  cursor: pointer;
+}
+
+.rate {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.btn-harga {
+  border-radius: 100px;
+  color: var(--warna-ungu);
+}
+
+.harga button,
+.modal-footer button {
+  background-color: var(--warna-ungu);
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  color: var(--bg-secondary);
+  font-family: var(--font-primary);
+}
+
+.harga button:hover {
+  font-weight: 700;
+}
+
+/*
+ * footer
+ */
+
+.footer1 {
+  background-color: var(--warna-ungu);
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  bottom: 0;
+  font-family: var(--font-primary);
+}
+
+.footer2 {
+  background-color: var(--bg-secondary);
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  font-family: var(--font-primary);
+}
+
+.footer2 p,
+.footer2 a {
+  text-decoration: none;
+  color: var(--warna-ungu);
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+footer p {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--icons-bg-primary);
+  font-size: 18px;
+}
+
+footer h1 {
+  font-size: 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--txt-secondary);
+}
+
+/* .location,
+.opens,
+.social {
+  border: 1px solid white;
+} */
+
+.opens {
+  display: block;
+}
+
+.medsos {
+  color: var(--icons-bg-primary);
+  display: flex;
+}
+
+.medsos i {
+  margin-right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Order */
+#order {
+  padding-top: 40px;
+}
+
+/*
+.detail-table,
+.detail-bayar {
+  border-top: 1px solid var(--warna-ungu);
+} */
+
+.titleorder {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.food-image {
+  width: 60vh;
+  border: 1px solid black;
+}
+
+.detail-nama p,
+.detail-deskripsi p,
+.detail-harga p {
+  padding: 0;
+  margin: 0;
+}
+
+.detail-nama p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.detail-rate p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.detail-harga {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.tombol-submit button,
+.btn-jumlah button,
+.tombol-ok button {
+  background-color: var(--warna-ungu);
+  color: var(--bg-secondary);
+}
+
+.btn-jumlah button:hover {
+  background-color: var(--warna-ungu);
+  color: var(--bg-secondary);
+}
+
+.purchase p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.Nomor-Meja {
+  border: none;
+  font-size: 1.3em;
+  padding-left: 5px;
+}
+
+/* .purchase{
+  border: 1px solid;
+} */
+
+/* .detail-food {
+  border: 1px solid;
+} */
+
+/* About */
+
+.azzafood h1 {
+  padding-top: 10px;
+  margin-top: 50px;
+  font-family: var(--font-secondary);
+  font-size: 3em;
+  color: var(--warna-ungu);
+  text-align: center;
+}
+
+.azzafood p {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  padding: 0 50vh;
+  font-size: 1.3em;
+}
+
+.azzafood h1:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out 0s;
+  transition-delay: 0.3s;
+}
+
+/* app.js */
+/* .menupage,
+.orderpage {
+  border: 1px solid;
+}
+
+.page-menu {
+  border: 1px solid;
+} */
+
+/* modal  */
+.modal-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* .modal.open {
+  display: block;
+}
+*/
+.modal-content {
+  background-color: #fefefe;
+  /* margin: 15% auto; */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-header {
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-menu {
+  margin-left: 20%;
+  padding: 0;
+}
+
+.pilih-menu {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.pilih-menu p {
+  font-size: 2.5em;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+}
+
+.cart h1 {
+  font-size: 20px;
+  color: var(--warna-hijau);
+}
+
+.cart li,
+.cart ol {
+  font-size: 20px;
+  color: var(--txt-primary);
+}
+
+.cart ol {
+  padding-left: 25px;
+}
+
+/* .hapus-pesanan {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+} */
+
+.no-meja,
+.catatan,
+.detail-bayar {
+  font-size: 20px;
+}
+
+.isi-modals {
+  font-size: 18px;
+}
+
+.scrollable-card {
+  max-height: 40em; /* Sesuaikan dengan tinggi maksimum yang diinginkan */
+  overflow-y: auto;
+}
+
+.scroll-cart {
+  max-height: 100px; /* Sesuaikan dengan tinggi maksimum yang diinginkan */
+  overflow-y: auto;
+}
